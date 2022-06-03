@@ -1,0 +1,43 @@
+extends base.pug
+
+block scripts
+  script(src='/static/script.js')
+block style
+    style
+        include ../static/style.css
+
+block content
+    section#intro-section
+        h1.center  Welcome To Anji Panja Dance Academy
+        h2.center  Eat Sleep Dance Repeat
+    section#mission-section
+        h2.center  Our Mission
+        div#card
+            div.cards.center
+                h3 Dance Perfection
+                div.card-cont
+                    div.card-img
+                        img(src="/static/img/1.png", alt="")    
+                    div.card-text
+                        p The Best Dance Aacademy in the whole universe 
+            div.cards.center
+                h3 Dance the way you like
+                div.card-cont.special
+                    div.card-img
+                        img(src="/static/img/2.png", alt="")    
+                    div.card-text
+                        p The Best Dance Aacademy in the whole universe 
+            div.cards.center
+                h3 Expert teaching
+                div.card-cont
+                    div.card-img
+                        img(src="/static/img/3-removebg-preview.png", alt="")    
+                    div.card-text
+                        p The Best Dance Aacademy in the whole universe  
+    section#sponsors-section
+        h2.center  Our Sponsors
+        div#sponsor-img 
+            img(src="/static/img/logo1.png", alt="", srcset="")
+            img(src="/static/img/logo2.png", alt="", srcset="")
+            img(src="/static/img/logo3.png", alt="", srcset="")
+            img(src="/static/img/logo4.png", alt="", srcset="")
